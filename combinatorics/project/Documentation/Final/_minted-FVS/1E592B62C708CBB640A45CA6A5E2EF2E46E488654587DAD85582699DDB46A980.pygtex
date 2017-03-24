@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{lyndonWords}\PYG{p}{(}\PYG{n}{s}\PYG{p}{,}\PYG{n}{n}\PYG{p}{):}
+    \PYG{n}{strings} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{c+c1}{\PYGZsh{}strings = [\PYGZhy{}1]}
+    \PYG{k}{while} \PYG{n}{strings}\PYG{p}{:}
+        \PYG{n}{strings}\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+=} \PYG{l+m+mi}{1}
+        \PYG{k}{yield} \PYG{n}{strings}
+        \PYG{n}{los} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{strings}\PYG{p}{)}
+        \PYG{k}{while} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{strings}\PYG{p}{)} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{:}
+            \PYG{n}{strings}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{strings}\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{n}{los}\PYG{p}{])}
+        \PYG{k}{while} \PYG{n}{strings} \PYG{o+ow}{and} \PYG{n}{strings}\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{==} \PYG{n}{s}\PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{}while strings and strings[\PYGZhy{}1] == s \PYGZhy{} 1:}
+            \PYG{n}{strings}\PYG{o}{.}\PYG{n}{pop}\PYG{p}{()}
+
+\PYG{k}{def} \PYG{n+nf}{uCycle}\PYG{p}{(}\PYG{n}{s}\PYG{p}{,}\PYG{n}{n}\PYG{p}{):}
+    \PYG{n}{cycle} \PYG{o}{=} \PYG{p}{[]}
+    \PYG{k}{for} \PYG{n}{c} \PYG{o+ow}{in} \PYG{n}{lyndonWords}\PYG{p}{(}\PYG{n}{s}\PYG{p}{,}\PYG{n}{n}\PYG{p}{):}
+        \PYG{k}{if} \PYG{n}{n} \PYG{o}{\PYGZpc{}} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{c}\PYG{p}{)} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{:}
+            \PYG{n}{cycle} \PYG{o}{+=} \PYG{n}{c}
+    \PYG{k}{return} \PYG{n}{cycle}
+\end{Verbatim}

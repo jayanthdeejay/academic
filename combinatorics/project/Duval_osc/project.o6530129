@@ -1,0 +1,17 @@
+/var/spool/batch/torque/mom_priv/jobs/6530129.oak-batch.osc.edu.SC: line 26: 24484 Killed                  python project.py
+****** n0662.ten.osc.edu: Process killed for excessive memory use. ******
+
+-----------------------
+Resources requested:
+mem=60gb
+nodes=1:ppn=1
+-----------------------
+Resources used:
+cput=00:17:18
+walltime=00:18:04
+mem=61.389 GB
+vmem=68.421 GB
+-----------------------
+Resource units charged (estimate):
+0.361 RUs
+-----------------------

@@ -1,0 +1,5 @@
+SET a 10
+GET a
+SET a 20
+GET a
+END

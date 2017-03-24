@@ -1,0 +1,80 @@
+jayanthdeejay: ~/Documents/Edu/UC/Classes/IDA/HW2$ perl iggr.pl 
+Switch will be removed from the Perl core distribution in the next major release. Please install it from CPAN. It is being used at iggr.pl, line 4.
+
+
+Info gain before split:0.719630170795463
+
+Attribute: hair
+Information gain: 0.238016763465492
+Gain Ratio: 0.803506188856845
+
+
+Attribute: feathers
+Information gain: 0.216124478312838
+Gain Ratio: 1
+
+
+Attribute: eggs
+Information gain: 0.249896573511323
+Gain Ratio: 0.847541683942592
+
+
+Attribute: milk
+Information gain: 0.293299461420981
+Gain Ratio: 1
+
+
+Attribute: airborne
+Information gain: 0.141394574502582
+Gain Ratio: 0.593758842512566
+
+
+Attribute: aquatic
+Information gain: 0.117247415558954
+Gain Ratio: 0.414487429088257
+
+
+Attribute: predator
+Information gain: 0.0281303622088184
+Gain Ratio: 0.0942551197433632
+
+
+Attribute: toothed
+Information gain: 0.260599907272403
+Gain Ratio: 0.893770416943896
+
+
+Attribute: backbone
+Information gain: 0.203545267257161
+Gain Ratio: 1
+
+
+Attribute: breathes
+Information gain: 0.184981134566036
+Gain Ratio: 0.833224028186092
+
+
+Attribute: venomous
+Information gain: 0.0400639706018789
+Gain Ratio: 0.333238859207586
+
+
+Attribute: fins
+Information gain: 0.140464680096037
+Gain Ratio: 0.713651126180016
+
+
+Attribute: tail
+Information gain: 0.150653606567144
+Gain Ratio: 0.608213435605716
+
+
+Attribute: domestic
+Information gain: 0.0152528225771956
+Gain Ratio: 0.0914767942348746
+
+
+Attribute: catsize
+Information gain: 0.0928648471919262
+Gain Ratio: 0.312232066825305
+jayanthdeejay: ~/Documents/Edu/UC/Classes/IDA/HW2$

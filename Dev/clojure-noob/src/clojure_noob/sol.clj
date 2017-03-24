@@ -1,0 +1,23 @@
+1: (= (- 10 (* 2 3)) 4)
+2: (= (list :a :b :c) '(:a :b :c))
+3: (= '(1 2 3 4) (conj '(3 4) 2 1))
+4: (= [1 2 3 4] (conj [1 2] 3 4))
+5: (= #{1 2 3 4} (conj #{1 4 3} 2))
+6: (= 20 (:b {:a 10, :b 20, :c 30}))
+7: (= 8 ((fn [x] (+ x 5)) 3))
+8: (= 8 ((partial + 5) 3))
+9: (= ((fn [x] (* 2 x)) 7) 14)
+10: (= (max 1 8 3 9 4) 9)
+11: (= ((fn [x] (str "Hello, " x "!")) "Jenn") "Hello, Jenn!")
+12: (= (last (list 1 2 3 4 5)) 5)
+13: (= ((fn [x] (first (rest (reverse x)))) (list 1 2 3 4 5)) 4)
+14: (= 7 (let [x 3, y 10] (- y x)))
+15: (= (filter odd? #{1 2 3 4 5}) '(1 3 5))
+16: (= ((fn [x] (count (filter #(= % 1) x))) [1 1 2 1 3 1 1 3]) 5 )
+17: (= ((fn [x]  (into {} (into [] (map (fn [y] (conj [y] y)) x)))) [1 2 3]) {1 1, 2 2, 3 3})
+18: (= (map (fn [x] (conj [x] x)) [1 2 3]) '([1 1] [2 2] [3 3]))
+19: (= ((fn [x] (conj (into [] (rest x)) (first x))) [1 2 3 4 5 6]) '(2 3 4 5 6 1))
+20: (= ((defn addlast [x y] (if (= x 0) y (addlast (dec x) (conj (into [] (rest y)) (first y))))) 2 [1 2 3 4 5 6]) '(3 4 5 6 1 2))
+
+
+

@@ -1,0 +1,156 @@
+---
+history:
+  - attempts:
+      - method: dleasy
+        start: 1417523274.62652
+        url: &1 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523275.02311
+    file: authors/id/P/PE/PEVANS/Socket-2.016.tar.gz
+    filesize: 40582
+    start: 1417523274.62614
+    thesiteurl: *1
+  - attempts:
+      - method: dleasy
+        start: 1417523275.04712
+        url: &2 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523275.69605
+    file: authors/id/P/PE/PEVANS/CHECKSUMS
+    filesize: 182734
+    start: 1417523275.02919
+    thesiteurl: *2
+  - attempts:
+      - method: dleasy
+        start: 1417523275.81471
+        url: &3 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523276.21703
+    file: authors/id/N/NW/NWCLARK/ExtUtils-Constant-0.23.tar.gz
+    filesize: 40113
+    start: 1417523275.8135
+    thesiteurl: *3
+  - attempts:
+      - method: dleasy
+        start: 1417523276.25066
+        url: &4 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523276.70124
+    file: authors/id/N/NW/NWCLARK/CHECKSUMS
+    filesize: 28588
+    start: 1417523276.23184
+    thesiteurl: *4
+  - attempts:
+      - method: dleasy
+        start: 1417523281.93266
+        url: &5 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523282.32975
+    file: authors/id/E/ET/ETHER/Module-Metadata-1.000024.tar.gz
+    filesize: 40647
+    start: 1417523281.93214
+    thesiteurl: *5
+  - attempts:
+      - method: dleasy
+        start: 1417523282.37883
+        url: &6 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523283.13797
+    file: authors/id/E/ET/ETHER/CHECKSUMS
+    filesize: 329906
+    start: 1417523282.35079
+    thesiteurl: *6
+  - attempts:
+      - method: dleasy
+        start: 1417523283.90377
+        url: &7 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523284.37992
+    file: authors/id/J/JP/JPEACOCK/version-0.9909.tar.gz
+    filesize: 120080
+    start: 1417523283.90326
+    thesiteurl: *7
+  - attempts:
+      - method: dleasy
+        start: 1417523284.44848
+        url: &8 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523284.86614
+    file: authors/id/J/JP/JPEACOCK/CHECKSUMS
+    filesize: 30122
+    start: 1417523284.41325
+    thesiteurl: *8
+  - attempts:
+      - method: dleasy
+        start: 1417523291.17284
+        url: &9 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523291.61129
+    file: authors/id/D/DA/DAGOLDEN/CPAN-Meta-2.143240.tar.gz
+    filesize: 98806
+    start: 1417523291.17264
+    thesiteurl: *9
+  - attempts:
+      - method: dleasy
+        start: 1417523300.06833
+        url: &10 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523300.45406
+    file: authors/id/D/DA/DAGOLDEN/Perl-OSType-1.007.tar.gz
+    filesize: 16427
+    start: 1417523300.06816
+    thesiteurl: *10
+  - attempts:
+      - method: dleasy
+        start: 1417523357.62193
+        url: &11 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523359.65402
+    file: authors/id/P/PM/PMQS/Compress-Raw-Zlib-2.066.tar.gz
+    filesize: 237917
+    start: 1417523357.62159
+    thesiteurl: *11
+  - attempts:
+      - method: dleasy
+        start: 1417523360.70302
+        url: &12 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523361.82824
+    file: authors/id/P/PM/PMQS/Compress-Raw-Bzip2-2.066.tar.gz
+    filesize: 136442
+    start: 1417523360.70285
+    thesiteurl: *12
+  - attempts:
+      - method: dleasy
+        start: 1417523495.51775
+        url: &13 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523495.9215
+    file: authors/id/U/UR/URI/File-ReadBackwards-1.05.tar.gz
+    filesize: 8943
+    start: 1417523495.51734
+    thesiteurl: *13
+  - attempts:
+      - method: dleasy
+        start: 1417523496.0664
+        url: &14 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: ftp://mirrors-usa.go-parts.com/cpan/
+    end: 1417523496.32884
+    file: authors/id/U/UR/URI/CHECKSUMS
+    filesize: 10689
+    start: 1417523496.01864
+    thesiteurl: *14

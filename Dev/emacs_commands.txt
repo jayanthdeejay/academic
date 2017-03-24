@@ -1,0 +1,235 @@
+C-G	:Cancel your current action
+C-x b	:list the buffers in mini-buffer (looks like a status bar in browser!)
+	:now you can start typing. If you are looking for a file that you have recently used
+	:or a buffer and when you start typing, emacs will look for it by default. If nothing
+	:matches with what you are typing, then you could use the typed text to name a new buffer
+	:you can use this command to create as many buffers as you want and at the same time
+	:switch between buffers quickly
+C-x k				:kills the buffer which is currently active
+C-x C-f				:to navigate file-system and open a file
+C-x C-s				:save the current buffer/file
+C-c C-k				:load the current buffer into REPL and compile it
+
+
+
+M-x package-list-packages 	:lists all the packages available
+				:M here stands for "option" on your mac
+				:"alt" in windows/linux
+M-x install-package "name"	:will install the package named "name"
+M-x package-refresh-contents	:will refresh the list of packages available
+
+
+/****** While editing files *******/
+
+C-k	:kill-line: current line contents after the cursor (including the one highlighted) will be deleted
+C-/
+Cmd-Z	:undo the last action
+C-a	:move to the beginninig of line
+C-e	:move to the end of line
+C-f	:move forward one character
+C-b	:move backward one character
+M-m	:move to first non-whitespace character of line
+M-f	:move forward one word
+M-b	:move backward one work
+C-s	:REGEX search. hit C-s again to search for that word in forward direction
+C-r	:search in reverse direction
+M-<	:move to beginning of buffer
+M->	:move to end of buffer
+M-g g	:go to line
+
+
+
+/******* Frame and windows  *******/
+C-x o	:Switch control between windows
+C-x 1	:Delete all other windows except the current one. You won't loose your data.
+C-x 2	:Split frames above and below
+C-x 3	:Split frames side by side
+C-x 0	:Delete current window
+
+
+/******* Clojure development key bindings *******/
+M-x cider-jack-in	:starts REPL in a new buffer
+C-x C-e			:Evaluates the current line (your pointer should be at the end of the line)
+C-c C-k               	:load the current buffer into REPL and compile it
+
+
+/******* Library funcitions seen so far ********/
+(hash-map ...)	:Create a Map
+(vector ...)	:Create a vector
+(list ...)	:Create a list
+(get [Map/Vector] [index])	:returns the indexed element from the respective Map/Vector
+(get-in [map] [index nested_index])	: returns the nested_indexed element from the indexed map in the map
+(conj [list] element)	:Will add element to the list and returns the list
+(nth [list] index)	:Will return the indexed elemenet from the list
+(hash-set ...)	:Create a set (contains unique data and mutiple entries will be deleted)
+(set [vector])	:Create a set from a vector. If the vector had duplicate values, they will be all be deleted
+(contains? [set] element)	:Check if the element is in the set. Returns bool
+
+
+
+
+
+
+def LengthLimitedLyndonWords(s,n):
+    w = [-1]                            
+    while w:
+        w[-1] += 1
+        yield w
+        m = len(w)
+        while len(w) < n:               
+            w.append(w[-m])
+        while w and w[-1] == s - 1:     
+            w.pop()
+
+
+def aperiodicPrefixes(s,n):
+    strings = [0]
+    while strings:
+        strings[-1] += 1
+        yield strings
+        los = len(strings)
+        while len(strings) < n:
+            strings.append(strings[-los])
+        while strings and strings[-1] == s:
+            strings.pop()
+
+
+
+def uCycle(s,n):
+    cycle = []
+    for c in aperiodicPrefixes(s,n):
+        if n % len(c) == 0:
+            cycle += c
+    return cycle
+
+
+for i in LengthLimitedLyndonWords(2,4):
+    print(i)
+
+
+	
+def LengthLimitedLyndonWords(s,n):
+    z = [[]]
+    y = [[]]
+    w = [0]
+    while w:
+        w[-1] += 1
+        #print w
+        z.append(w[:])
+        m = len(w)
+        while len(w) < n:
+            w.append(w[-m])
+        y.append(w[:])
+        while w and w[-1] == s:
+            w.pop()
+    del z[0]
+    del y[0]
+    print y
+    return z
+
+
+
+
+
+
+
+def toString(List):
+    return ''.join(List)
+ 
+z = []
+def allLexicographicRecur (string, data, last, index):
+    length = len(string)
+    for i in range(length):
+        data[index] = string[i]
+        if index==last:
+            z.append(toString(data))
+        else:
+            allLexicographicRecur(string, data, last, index+1)
+ 
+def allLexicographic(string, length):
+    data = [""] * (length+1)
+    string = sorted(string)
+    allLexicographicRecur(string, data, length-1, 0)
+
+
+
+#Code to get necklaces
+for i in p:
+    for j in range(1,len(i)):
+        if (not(i[1:]+i[:1]==i)):
+            x = i[j:]+i[:j]
+            if x in p:
+                if (not(i==x)):
+                    p.remove(x)
+
+#Code to get strings that have sum at least 10
+p = []
+for i in x:
+    sum = 0
+    for j in i:
+        sum += int(j)
+    if (sum >= 10):
+        p.append(i)
+
+#Code to get aperiodic prefixes of strings
+aperiodic = []
+for i in p:
+    if(len(i)%2 == 0):
+        if(i[1:]+i[:1]==i):
+            aperiodic.append(i[:1])
+        elif(i[:2]*(len(i)/2)==i):
+            aperiodic.append(i[:2])
+        elif(i[:len(i)/2]*2==i):
+            aperiodic.append(i[:len(i)/2])
+        else:
+            aperiodic.append(i)
+    elif(len(i)==9):
+        if(i[1:]+i[:1]==i):
+            aperiodic.append(i[:1])
+        elif(i[:3]*3==i):
+            aperiodic.append(i[:3])
+        else:
+            aperiodic.append(i)
+    else:
+        if(i[1:]+i[:1]==i):
+            aperiodic.append(i[:1])
+        else:
+            aperiodic.append(i)
+
+
+
+
+f = open("FKM_output.txt", "a")
+for sample in range(10):
+    for i in range(2,10):
+        for j in range(2,10):
+            string = ""
+            for k in range (1,j+1):
+                string += str(k)
+            start_time = time.time()
+            allLexicographic(string, i)
+            strings = necklaces(strings)
+            strings = aperiodic(strings)
+            strings = "".join(strings)
+            f.write("%d, %d, %.8f\n" %(i, j, time.time()-start_time))
+    f.write("\n")
+
+
+
+def lyndonWords(s,n):
+strings = [0]
+while strings:
+strings[-1] += 1
+yield strings
+los = len(strings)
+while len(strings) < n:
+strings.append(strings[-los])
+while strings and strings[-1] == ]
+strings.pop()
+
+
+
+
+
+
+

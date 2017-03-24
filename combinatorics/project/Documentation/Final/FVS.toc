@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Abstract}{4}{section.1}
+\contentsline {section}{\numberline {2}Introduction}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}de Bruijn Sequence}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Universal Cycles}{4}{subsection.2.2}
+\contentsline {section}{\numberline {3}FKM Algorithm}{5}{section.3}
+\contentsline {section}{\numberline {4}J. P. Duval Algorithm}{5}{section.4}
+\contentsline {section}{\numberline {5}Implementation}{6}{section.5}
+\contentsline {subsection}{\numberline {5.1}FKM algorithm implementation:}{6}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Duval algorithm implementation:}{9}{subsection.5.2}
+\contentsline {section}{\numberline {6}Results}{10}{section.6}
+\contentsline {section}{\numberline {7}Conclusion and Future work}{13}{section.7}
